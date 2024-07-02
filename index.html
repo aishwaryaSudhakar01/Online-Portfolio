@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwarya Sudhakar - Portfolio</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=XM2ctTL8mkBj&format=png&color=ffffff"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #BCABAE;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 40px 40px;
+            padding: 20px;
+            background-color: #2F3037;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+            text-align: center;
+        }
+
+        i.fas.fa-briefcase {
+            margin-right: 10px;
+        }
+
+        .profile-photo img {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-info p {
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .buttons-info {
+            color: white;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 20px;
+            color: white;
+            font-size: 27px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            /* Adjust size as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-top: 3px;
+        }
+
+
+        .social-icons a:hover {
+            color: #E2294F;
+            /* Adjust hover color if needed */
+        }
+
+        .project-categories {
+            margin-bottom: 20px;
+        }
+
+        .project-category {
+            display: inline-block;
+            border: 2px solid #E2294F;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            width: 200px;
+        }
+
+        .project-category h2 {
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 10px;
+            margin: 0;
+            color: #E2294F;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .project-category h2:hover,
+        .project-category.active h2 {
+            background-color: #E2294F;
+            color: #fff;
+        }
+
+        .projects-container {
+            display: none;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .project {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .project.visible {
+            display: block;
+        }
+
+        .project h3 {
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .project-images a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .project-images a.full-width {
+            width: calc(50% - 10px);
+            margin: 0 auto;
+        }
+
+
+        .project-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .project-images img:hover {
+            transform: scale(1.01);
+        }
+
+        .project-images a h4 {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+            text-transform: uppercase;
+        }
+
+        .project p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-photo">
+            <img src="C:\Users\aishu\OneDrive\Pictures\Aishwarya_Bharadwaj.png" alt="Aishwarya Sudhakar">
+        </div>
+
+        <div class="profile-info">
+            <h1>AISHWARYA SUDHAKAR</h1>
+            <p>Hi there!</p>
+            <p>I'm a dedicated Data Scientist with over a year of experience, specializing in developing data models,
+                performing advanced analyses, and utilizing machine learning techniques.</p>
+            <p>I thrive on transforming complex data into actionable insights and am always excited to connect with
+                others who share a passion for data. Let's explore how data can drive success together!</p>
+        </div>
+
+        <div class="social-icons">
+            <a href="mailto:aishwaryasudhakar12@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="http://www.linkedin.com/in/aishwaryasudhakar01"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aishwaryaSudhakar01"><i class="fab fa-github"></i></a>
+            <a href="https://drive.google.com/file/d/15S527G5DIEH7iUnhY7tpgWb-Nq5Fb7Lf/view"><i
+                    class="fas fa-file-alt"></i></a>
+            <a href="https://www.upwork.com/freelancers/~01efc0a0f54607df98" target="_blank" class="upwork-icon-link">
+                <img src="https://img.icons8.com/?size=100&id=2y_wcSzVjqiQ&format=png&color=ffffff" alt="Upwork"
+                    id="upwork-icon">
+            </a>
+        </div>
+
+        <div class="buttons-info">
+            <p>Click on the buttons below to access my projects!</p>
+        </div>
+
+        <div class="project-categories">
+            <div class="project-category">
+                <h2>SQL</h2>
+            </div>
+            <div class="project-category">
+                <h2>Power BI</h2>
+            </div>
+            <div class="project-category">
+                <h2>Machine Learning</h2>
+            </div>
+            <div class="project-category">
+                <h2>Internships</h2>
+            </div>
+            <div class="project-category">
+                <h2>Certifications</h2>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <div class="project" data-category="SQL">
+                <div class="project-images">
+                    <a href="https://github.com/aishwaryaSudhakar01/Ecommerce-Insights" target="_blank">
+                        <h4>E-COMMERCE INSIGHTS</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\sql_pj1.png" alt="Project 1 Image 1">
+                    </a>
+                    <a href="https://github.com/aishwaryaSudhakar01/project1-link" target="_blank">
+                        <h4>Managing Employee Turnover</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\sql_pj2.png" alt="Project 1 Image 2">
+                    </a>
+                </div>
+            </div>
+            <div class="project" data-category="Power BI">
+                <div class="project-images">
+                    <a href="https://github.com/aishwaryaSudhakar01/project2-link" target="_blank">
+                        <h4>Grievance Management</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\powerbi_pj2.png" alt="Project 2 Image 1">
+                    </a>
+                    <a href="https://app.powerbi.com/groups/me/reports/0c47fcec-d704-4686-b4a9-244db13fe3c7/f362fab1dc87e0252005?experience=power-bi"
+                        target="_blank">
+                        <h4>Sales & Product Performance</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\powerbi_pj1.png" alt="Project 2 Image 2">
+                    </a>
+                    <a href="https://github.com/aishwaryaSudhakar01/project2-link" class="full-width" target="_blank">
+                        <h4>Power BI Project</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\pink_bg.png" alt="Project 2 Image 3">
+                    </a>
+                </div>
+            </div>
+            <div class="project" data-category="Machine Learning">
+                <div class="project-images">
+                    <a href="https://github.com/aishwaryaSudhakar01/Credit-Card-Fraud-Detection" target="_blank">
+                        <h4>Credit Card Fraud Detection</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\ml_pj1.png" alt="Project 3 Image 1">
+                    </a>
+                    <a href="https://github.com/aishwaryaSudhakar01/project3-link" target="_blank">
+                        <h4>Crime Identification</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\ml_pj2.png" alt="Project 3 Image 2">
+                    </a>
+                </div>
+            </div>
+            <div class="project" data-category="Internships">
+                <div class="project-images">
+                    <a href="https://drive.google.com/file/d/1JBBD1NP8FIkdLXwF9KfZosUMOJVm1k8_/view" target="_blank">
+                        <h4>EY India</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\ey_pic.png" alt="Project 4 Image 1">
+                    </a>
+                    <a href="https://drive.google.com/file/d/1fmhLZKj3AJvUukWtYQszOhQEf9VkT01K/view" target="_blank">
+                        <h4>Convin</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\convin_pic.png" alt="Project 4 Image 2">
+                    </a>
+                </div>
+            </div>
+            <div class="project" data-category="Certifications">
+                <div class="project-images">
+                    <a href="https://www.udemy.com/certificate/UC-b6696336-13c7-46cb-a6f1-ef8a041f54a9/"
+                        target="_blank">
+                        <h4>BI Analyst</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\BI_Analyst_Certificate.png" alt="Project 5 Image 2">
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-97d8b1e0-1c4e-42a9-868d-401768212a08/"
+                        class="full-width" target="_blank">
+                        <h4>Power BI Certification</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\PowerBI_Certificate.png" alt="Project 5 Image 3">
+                    </a>
+                    <a href="https://coursera.org/verify/professional-cert/D4XY96BB2FRD" class="full-width"
+                        target="_blank">
+                        <h4>Google Data Analytics Professional Certificate</h4>
+                        <img src="C:\Users\aishu\OneDrive\Pictures\Screenshots\GDAC_Certificate.png"
+                            alt="Project 5 Image 2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const upworkIcon = document.getElementById('upwork-icon');
+
+        upworkIcon.addEventListener('mouseover', function () {
+            this.src = 'https://img.icons8.com/?size=100&id=2y_wcSzVjqiQ&format=png&color=E2294F';
+        });
+
+        upworkIcon.addEventListener('mouseout', function () {
+            this.src = 'https://img.icons8.com/?size=100&id=2y_wcSzVjqiQ&format=png&color=ffffff';
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projectCategories = document.querySelectorAll(".project-category");
+            const projectsContainer = document.querySelector(".projects-container");
+            const projects = document.querySelectorAll(".project");
+
+            projectCategories.forEach(category => {
+                category.addEventListener("click", function () {
+                    const categoryName = category.innerText.trim().toUpperCase();
+
+                    if (projectsContainer.style.display === "none" || !projectsContainer.style.display) {
+                        projectsContainer.style.display = "block";
+                    } else if (projectsContainer.getAttribute("data-active-category") === categoryName) {
+                        projectsContainer.style.display = "none";
+                        projectsContainer.removeAttribute("data-active-category");
+                        category.classList.remove("active");
+                        return;
+                    }
+
+                    projectsContainer.setAttribute("data-active-category", categoryName);
+
+                    projects.forEach(project => {
+                        const projectCategory = project.getAttribute("data-category").toUpperCase();
+                        if (projectCategory === categoryName) {
+                            project.classList.add("visible");
+                        } else {
+                            project.classList.remove("visible");
+                        }
+                    });
+
+                    projectCategories.forEach(c => c.classList.remove("active"));
+                    category.classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
